@@ -1,0 +1,86 @@
+:root {
+  --primary-color: #e50914;
+  --dark-color: #141414;
+  --light-color: #f4f4f4;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #000;
+  color: #999;
+  background-image: url("https://uploads-ssl.webflow.com/5e57eb33765372f7d30e19f9/5e9899d070ff9872c72ead68_1-Netflix%20login.jpg");
+}
+
+.showcase-top {
+  height: 70px;
+  background-color: #141414;
+}
+
+.showcase-top img {
+  width: 170px;
+}
+
+.showcase-top a {
+  position: absolute;
+  top: 5%;
+  left: 6%;
+  transform: translate(-50%, -50%);
+}
+
+.showcase-content {
+  position: relative;
+  z-index: 2;
+  width: 65%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 9rem;
+}
+
+.showcase-middle form.example input[type="text"] {
+  position: absolute;
+  top: 35%;
+  left: 1%;
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid rgb(255, 30, 30);
+  float: left;
+  width: 60%;
+  height: 60px;
+  background: #f1f1f1;
+}
+
+.showcase-middle form.example button {
+  position: absolute;
+  top: 35%;
+  left: 65%;
+  width: 300px;
+  height: 60px;
+  padding: 5px;
+  background: #f0020e;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+.showcase-middle form.example button:hover {
+  background: #3b3a3a;
+}
+
+.showcase-middle form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
